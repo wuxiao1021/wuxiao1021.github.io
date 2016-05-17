@@ -7,13 +7,17 @@
 
     
 
-    <title>伪类伪元素的作用及样式 | </title>
+    <title>gulp之jade插件操作 | </title>
     <meta name="author" content="吴肖">
+    
+    <meta name="description" content="Jade是一个基于javascript，可以运行与node与浏览器环境的一个前端模板引擎，而在对它进行学习了解后，作一番简介兼对自我的复习。tag标签通过缩进关系，代替以往html的层级包含关系，如一个简单的静态页面可以表达为
+
+以上jade中的 .text  默认是html中的div标签；styl">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="gulp之jade插件操作"/>
     <meta property="og:site_name" content="我用双手 成就你的梦想"/>
 
     
@@ -191,30 +195,61 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper brown darken-1">
-        <span class="breadcrumb">当前位置（标签）</span>
+        <span class="breadcrumb">当前位置（分类目录）</span>
         
+            
 
         
-            <a class="breadcrumb" href="/tags/伪类伪元素的作用及样式/">伪类伪元素的作用及样式</a>
+
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>gulp之jade插件操作</h1>
+    
 
 
-    <div class="collection mt-0">
+            </div>
+            <time class="light-green-link-context" datetime="2016-05-17T08:18:18.000Z"><a href="/2016/05/17/gulp之jade插件操作/">2016-05-17</a></time>
+
+            
+    <div class="tags-row">
         
-            <a href="/2016/05/13/伪类伪元素/" class="collection-item grey-text text-darken-1">
-                <time datetime="2016-05-13T00:49:56.000Z">2016-05-13</time>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                伪类伪元素
-            </a>
+            <a href="/tags/Jade基础语法与操作/" class="chip light-green">Jade基础语法与操作</a>
         
     </div>
+
+
+            <div class="toc light-green-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Jade是一个基于javascript，可以运行与node与浏览器环境的一个前端模板引擎，而在对它进行学习了解后，作一番简介兼对自我的复习。"><span class="section table-of-contents-text">Jade是一个基于javascript，可以运行与node与浏览器环境的一个前端模板引擎，而在对它进行学习了解后，作一番简介兼对自我的复习。</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#tag标签"><span class="section table-of-contents-text">tag标签</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-5"><a class="section table-of-contents-link" href="#以上jade中的-text-默认是html中的div标签；"><span class="section table-of-contents-text">以上jade中的 .text  默认是html中的div标签；</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#style属性；如下图"><span class="section table-of-contents-text">style属性；如下图</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#link的外部样式引用"><span class="section table-of-contents-text">link的外部样式引用</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#Include-可以把一个html文件分解成多个部分的jade文件去编写；"><span class="section table-of-contents-text">Include 可以把一个html文件分解成多个部分的jade文件去编写；</span></a></li></ol></li></ol>
+</div>
+
+
+            <div class="entry light-green-link-context">
+                <h3 id="Jade是一个基于javascript，可以运行与node与浏览器环境的一个前端模板引擎，而在对它进行学习了解后，作一番简介兼对自我的复习。"><a href="#Jade是一个基于javascript，可以运行与node与浏览器环境的一个前端模板引擎，而在对它进行学习了解后，作一番简介兼对自我的复习。" class="headerlink" title="Jade是一个基于javascript，可以运行与node与浏览器环境的一个前端模板引擎，而在对它进行学习了解后，作一番简介兼对自我的复习。"></a>Jade是一个基于javascript，可以运行与node与浏览器环境的一个前端模板引擎，而在对它进行学习了解后，作一番简介兼对自我的复习。</h3><h4 id="tag标签"><a href="#tag标签" class="headerlink" title="tag标签"></a>tag标签</h4><p>通过缩进关系，代替以往html的层级包含关系，如一个简单的静态页面可以表达为</p>
+<p><img src="http://fs.powereasy.net/summarize/2015/11/201511032309283997.png" alt=""></p>
+<h5 id="以上jade中的-text-默认是html中的div标签；"><a href="#以上jade中的-text-默认是html中的div标签；" class="headerlink" title="以上jade中的 .text  默认是html中的div标签；"></a>以上jade中的 .text  默认是html中的div标签；</h5><h4 id="style属性；如下图"><a href="#style属性；如下图" class="headerlink" title="style属性；如下图"></a>style属性；如下图</h4><p><img src="http://fs.powereasy.net/summarize/2015/11/201511032310010255.png" alt=""></p>
+<h4 id="link的外部样式引用"><a href="#link的外部样式引用" class="headerlink" title="link的外部样式引用"></a>link的外部样式引用</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node: (link(rel=<span class="string">"stylesheet"</span>,href=<span class="string">"文件地址"</span>)）</span><br></pre></td></tr></table></figure>
+<h4 id="Include-可以把一个html文件分解成多个部分的jade文件去编写；"><a href="#Include-可以把一个html文件分解成多个部分的jade文件去编写；" class="headerlink" title="Include 可以把一个html文件分解成多个部分的jade文件去编写；"></a>Include 可以把一个html文件分解成多个部分的jade文件去编写；</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node: include head.jade</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node: include foot.jade</span><br></pre></td></tr></table></figure>
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
 
 
 </div>

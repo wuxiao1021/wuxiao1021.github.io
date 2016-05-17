@@ -40,7 +40,7 @@
 <body>
     <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
 
-    <nav class="indigo">
+    <nav class="brown darken-1">
     <div class="nav-wrapper">
         <a href="#" data-activates="main-menu" class="button-collapse">
             <i class="fa fa-navicon"></i>
@@ -196,7 +196,7 @@
     <main>
         <div class="container main-container">
     <nav class="page-nav hide-on-small-only">
-    <div class="nav-wrapper indigo">
+    <div class="nav-wrapper brown darken-1">
         <span class="breadcrumb">当前位置（分类目录）</span>
         
             
@@ -220,22 +220,22 @@
 
 
             </div>
-            <time class="pink-link-context" datetime="2016-05-16T11:10:34.000Z"><a href="/2016/05/16/gulp基本操作/">2016-05-16</a></time>
+            <time class="light-green-link-context" datetime="2016-05-16T11:10:34.000Z"><a href="/2016/05/16/gulp基本操作/">2016-05-16</a></time>
 
             
     <div class="tags-row">
         
-            <a href="/tags/gulp-操作/" class="chip pink lighten-1">gulp 操作</a>
+            <a href="/tags/gulp-操作/" class="chip light-green">gulp 操作</a>
         
     </div>
 
 
-            <div class="toc pink-link-context hide-on-med-and-down">
+            <div class="toc light-green-link-context hide-on-med-and-down">
     <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#入门指南"><span class="section table-of-contents-text">入门指南</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#gulp也是nodeJS的第三方插件，所有我们使用他需要在本地全局安装；"><span class="section table-of-contents-text">gulp也是nodeJS的第三方插件，所有我们使用他需要在本地全局安装；</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#1-全局安装-gulp："><span class="section table-of-contents-text">1. 全局安装 gulp：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#2-作为项目的开发依赖（devDependencies）安装："><span class="section table-of-contents-text">2. 作为项目的开发依赖（devDependencies）安装：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#3-在项目根目录下创建一个名为-gulpfile-js的文件（注明这里的文件名称不能更变）"><span class="section table-of-contents-text">3. 在项目根目录下创建一个名为 gulpfile.js的文件（注明这里的文件名称不能更变）</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#4-运行-gulp-默认的任务名为：default；单独执行-gulp-任务名称"><span class="section table-of-contents-text">4. 运行 gulp 默认的任务名为：default；单独执行 gulp 任务名称</span></a></li></ol></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#例子（压缩JS文件）"><span class="section table-of-contents-text">例子（压缩JS文件）</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#1、下载插件（concat）合并-JS文件和（jsmin）压缩成新的-JS文件"><span class="section table-of-contents-text">1、下载插件（concat）合并.JS文件和（jsmin）压缩成新的.JS文件</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#2、-在项目根文件夹中创建一个JS文件夹，和多个-JS文件"><span class="section table-of-contents-text">2、 在项目根文件夹中创建一个JS文件夹，和多个.JS文件</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#3、-在项目根文件夹中创建一个存放合并压缩好的-js文件-如：（wenJS）"><span class="section table-of-contents-text">3、 在项目根文件夹中创建一个存放合并压缩好的.js文件 如：（wenJS）</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#4、-在项目文件夹中gulpfile-js的文件编写合并压缩任务-如下："><span class="section table-of-contents-text">4、 在项目文件夹中gulpfile.js的文件编写合并压缩任务 如下：</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#同理：既然JS可以压缩那么html、css、背景图压缩……-等"><span class="section table-of-contents-text">同理：既然JS可以压缩那么html、css、背景图压缩…….等;</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#有事没事可以加我微信15059132892，也可以扫描以下二维码"><span class="section table-of-contents-text">有事没事可以加我微信15059132892，也可以扫描以下二维码</span></a></li></ol>
 </div>
 
 
-            <div class="entry pink-link-context">
+            <div class="entry light-green-link-context">
                 <h2 id="入门指南"><a href="#入门指南" class="headerlink" title="入门指南"></a>入门指南</h2><h1 id="gulp也是nodeJS的第三方插件，所有我们使用他需要在本地全局安装；"><a href="#gulp也是nodeJS的第三方插件，所有我们使用他需要在本地全局安装；" class="headerlink" title="gulp也是nodeJS的第三方插件，所有我们使用他需要在本地全局安装；"></a>gulp也是nodeJS的第三方插件，所有我们使用他需要在本地全局安装；</h1><p><img src="http://i2.buimg.com/f6adc7eecc8f5eae.jpg" alt=""></p>
 <h4 id="1-全局安装-gulp："><a href="#1-全局安装-gulp：" class="headerlink" title="1. 全局安装 gulp："></a>1. 全局安装 gulp：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node: npm install -g gulp</span><br></pre></td></tr></table></figure>
 <h4 id="2-作为项目的开发依赖（devDependencies）安装："><a href="#2-作为项目的开发依赖（devDependencies）安装：" class="headerlink" title="2. 作为项目的开发依赖（devDependencies）安装："></a>2. 作为项目的开发依赖（devDependencies）安装：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node: npm install --save-dev gulp(这里的gulp是指要安装的插件名称)</span><br></pre></td></tr></table></figure>
@@ -269,17 +269,17 @@
 </div>
 
         <div class="fixed-action-btn float-sitemap">
-    <a class="btn-floating btn-large pink">
+    <a class="btn-floating btn-large light-green">
       <i class="fa fa-caret-square-o-up"></i>
     </a>
     <ul>
-      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
-      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+      <li><a class="btn-return-top btn-floating waves-effect red" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse purple"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
     </ul>
   </div>
 
     </main>
-    <footer class="page-footer indigo darken-1">
+    <footer class="page-footer brown darken-1 darken-1">
     
     <div class="container">
         <div class="row">
@@ -330,7 +330,7 @@
     </div>
     
 
-    <div class="footer-copyright pink-link-context">
+    <div class="footer-copyright light-green-link-context">
         <div class="container">
             © 2016 example.com, 吴肖.
             <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
@@ -411,11 +411,11 @@
             $('li.tab a').hover(function() {
                 $(this).toggleClass('text-lighten-4');
             });
-            $('.indicator').addClass('pink lighten-2');
+            $('.indicator').addClass('light-green lighten-2');
 
             
             // 添加new标签
-            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            $('.menu-reading, .menu-about').append('<span class="new badge light-green"></span>');
             
 
             // 搜索功能
@@ -490,7 +490,7 @@
                             if (isMatch) {
                                 keywords.forEach(function(keyword) {
                                     var regS = new RegExp(keyword, "gi");
-                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword light-green lighten-2\">" + keyword + "</span>");
                                 });
 
                                 str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
@@ -512,7 +512,7 @@
                                     // highlight all keywords
                                     keywords.forEach(function(keyword) {
                                         var regS = new RegExp(keyword, "gi");
-                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword light-green lighten-2\">" + keyword + "</span>");
                                     });
 
                                     str += "<p class=\"search-result\">..." + match_content + "...</p>"

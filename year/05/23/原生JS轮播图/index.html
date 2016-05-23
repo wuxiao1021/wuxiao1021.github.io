@@ -1,0 +1,691 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="JS原生轮播步骤," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="普通轮播JS部分CSS样式部分我就不多说什么啦 ！相信大家都.说说JS部分吧一、 获取变量
+var box=document.querySelector(“#box”);
+
+var wrap=document.querySelector(“#box .wrap”);
+
+var imgs=document.querySelectorAll(“#box .wrap img”);
+
+var left=d">
+<meta property="og:type" content="article">
+<meta property="og:title" content="原生JS轮播图">
+<meta property="og:url" content="http://yoursite.com/year/05/23/原生JS轮播图/index.html">
+<meta property="og:site_name" content="我用双手 侬码一生">
+<meta property="og:description" content="普通轮播JS部分CSS样式部分我就不多说什么啦 ！相信大家都.说说JS部分吧一、 获取变量
+var box=document.querySelector(“#box”);
+
+var wrap=document.querySelector(“#box .wrap”);
+
+var imgs=document.querySelectorAll(“#box .wrap img”);
+
+var left=d">
+<meta property="og:image" content="http://i2.buimg.com/d08dbc26488ad334.png">
+<meta property="og:updated_time" content="2016-05-23T12:09:06.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="原生JS轮播图">
+<meta name="twitter:description" content="普通轮播JS部分CSS样式部分我就不多说什么啦 ！相信大家都.说说JS部分吧一、 获取变量
+var box=document.querySelector(“#box”);
+
+var wrap=document.querySelector(“#box .wrap”);
+
+var imgs=document.querySelectorAll(“#box .wrap img”);
+
+var left=d">
+<meta name="twitter:image" content="http://i2.buimg.com/d08dbc26488ad334.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+  <title> 原生JS轮播图 | 我用双手 侬码一生 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">我用双手 侬码一生</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                原生JS轮播图
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-05-23T19:37:55+08:00" content="2016-05-23">
+              2016-05-23
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/year/05/23/原生JS轮播图/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="year/05/23/原生JS轮播图/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+
+
+
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="普通轮播JS部分"><a href="#普通轮播JS部分" class="headerlink" title="普通轮播JS部分"></a>普通轮播JS部分</h2><h3 id="CSS样式部分我就不多说什么啦-！相信大家都-说说JS部分吧"><a href="#CSS样式部分我就不多说什么啦-！相信大家都-说说JS部分吧" class="headerlink" title="CSS样式部分我就不多说什么啦 ！相信大家都.说说JS部分吧"></a>CSS样式部分我就不多说什么啦 ！相信大家都.说说JS部分吧</h3><h4 id="一、-获取变量"><a href="#一、-获取变量" class="headerlink" title="一、 获取变量"></a>一、 获取变量</h4><ol>
+<li><p>var box=document.querySelector(“#box”);</p>
+</li>
+<li><p>var wrap=document.querySelector(“#box .wrap”);</p>
+</li>
+<li><p>var imgs=document.querySelectorAll(“#box .wrap img”);</p>
+</li>
+<li><p>var left=document.querySelector(“#btn_left”);</p>
+</li>
+<li><p>var right=document.querySelector(“#btn_right”);</p>
+</li>
+<li><p>var spans=document.querySelectorAll(“#aitcve span”);</p>
+</li>
+</ol>
+<h4 id="二、-让图片在一排显示，定义记步器"><a href="#二、-让图片在一排显示，定义记步器" class="headerlink" title="二、 让图片在一排显示，定义记步器"></a>二、 让图片在一排显示，定义记步器</h4><p>wrap.style.width=imgs.length*box.offsetWidth+”px”;</p>
+<p>var speens=0;//计步器</p>
+<h4 id="三、让图片和点同步的一种方式；这是一个封装函数-move"><a href="#三、让图片和点同步的一种方式；这是一个封装函数-move" class="headerlink" title="三、让图片和点同步的一种方式；这是一个封装函数 move"></a>三、让图片和点同步的一种方式；这是一个封装函数 move</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">node: <span class="keyword">function</span> <span class="function"><span class="title">move</span></span>() &#123;</span><br><span class="line">		<span class="keyword">for</span> (var i = 0; i &lt; spans.length; i++) &#123;</span><br><span class="line">			spans[i].className=<span class="string">""</span>;	</span><br><span class="line">		&#125;</span><br><span class="line">		wrap.style.left=-spaen*box.offsetWidth+<span class="string">"px"</span>;</span><br><span class="line">		spans[spaen].className=<span class="string">"dian"</span>;</span><br><span class="line">	  &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="四、-让图片动起来的一种方法；这是一个封装函数-auto"><a href="#四、-让图片动起来的一种方法；这是一个封装函数-auto" class="headerlink" title="四、  让图片动起来的一种方法；这是一个封装函数 auto"></a>四、  让图片动起来的一种方法；这是一个封装函数 auto</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">node: <span class="keyword">function</span> <span class="function"><span class="title">auto</span></span>()&#123;</span><br><span class="line">		 spaen++;</span><br><span class="line">		 <span class="keyword">if</span> (spaen&gt;=imgs.length) &#123;</span><br><span class="line">			spaen=0;</span><br><span class="line">		 &#125;</span><br><span class="line">		move();//调用 函数 move</span><br><span class="line">	  &#125;</span><br><span class="line">	  var timer=<span class="built_in">set</span>Interval(auto,2000);//定时器</span><br></pre></td></tr></table></figure>
+<h4 id="五、-鼠标移入移出-让图片和点停止播放效果；"><a href="#五、-鼠标移入移出-让图片和点停止播放效果；" class="headerlink" title="五、 鼠标移入移出 让图片和点停止播放效果；"></a>五、 鼠标移入移出 让图片和点停止播放效果；</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">node: // 鼠标移入让图片和点失去生命力；</span><br><span class="line">		box.onmouseenter=<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">			clearInterval(timer);</span><br><span class="line">			left.style.display=<span class="string">"block"</span>;</span><br><span class="line">			right.style.display=<span class="string">"block"</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	  // 鼠标移出让图片和点有生命力</span><br><span class="line">		box.onmouseleave=<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">			timer=<span class="built_in">set</span>Interval(auto,2000);</span><br><span class="line">			left.style.display=<span class="string">"none"</span>;</span><br><span class="line">			right.style.display=<span class="string">"none"</span>;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="六、-点击左右按钮控制轮播方向"><a href="#六、-点击左右按钮控制轮播方向" class="headerlink" title="六、 点击左右按钮控制轮播方向"></a>六、 点击左右按钮控制轮播方向</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">node: // 点击左按钮 让图片和点 往左走</span><br><span class="line">		left.onclick=<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">			spaen--;</span><br><span class="line">			<span class="keyword">if</span> (spaen&lt;0) &#123;</span><br><span class="line">		 		spaen=imgs.length-1;</span><br><span class="line">			&#125;</span><br><span class="line">			move();//调用 函数 move</span><br><span class="line">		&#125;</span><br><span class="line">	 // 点击右按钮 让图片和点 往右走</span><br><span class="line">			right.onclick=<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">				auto();//调用 函数 auto</span><br><span class="line">			&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="七、-轮播圆点-点击出现对应的图片"><a href="#七、-轮播圆点-点击出现对应的图片" class="headerlink" title="七、 轮播圆点 点击出现对应的图片"></a>七、 轮播圆点 点击出现对应的图片</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">node: <span class="keyword">for</span> (var i = 0; i &lt; spans.length; i++) &#123;</span><br><span class="line">		 spans[i].index=i;</span><br><span class="line">		 spans[i].onclick=<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">		 spaen=this.index;</span><br><span class="line">		 move();</span><br><span class="line">		 &#125;</span><br><span class="line">	  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="总结：怎么样这样写是不是思路很清晰！不管你信不信反正我是信啦！有什么不懂的可以扫描一下二维码！或者加五微信：15059132892"><a href="#总结：怎么样这样写是不是思路很清晰！不管你信不信反正我是信啦！有什么不懂的可以扫描一下二维码！或者加五微信：15059132892" class="headerlink" title="总结：怎么样这样写是不是思路很清晰！不管你信不信反正我是信啦！有什么不懂的可以扫描一下二维码！或者加五微信：15059132892!"></a>总结：怎么样这样写是不是思路很清晰！不管你信不信反正我是信啦！有什么不懂的可以扫描一下二维码！或者加五微信：15059132892!</h2><p><img src="http://i2.buimg.com/d08dbc26488ad334.png" alt=""></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JS原生轮播步骤/" rel="tag">#JS原生轮播步骤</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/year/05/18/Bootstrap框架/" rel="next" title="Bootstrap框架">
+                <i class="fa fa-chevron-left"></i> Bootstrap框架
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="year/05/23/原生JS轮播图/"
+           data-title="原生JS轮播图" data-url="http://yoursite.com/year/05/23/原生JS轮播图/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="吴肖" />
+          <p class="site-author-name" itemprop="name">吴肖</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#普通轮播JS部分"><span class="nav-number">1.</span> <span class="nav-text">普通轮播JS部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS样式部分我就不多说什么啦-！相信大家都-说说JS部分吧"><span class="nav-number">1.1.</span> <span class="nav-text">CSS样式部分我就不多说什么啦 ！相信大家都.说说JS部分吧</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#一、-获取变量"><span class="nav-number">1.1.1.</span> <span class="nav-text">一、 获取变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二、-让图片在一排显示，定义记步器"><span class="nav-number">1.1.2.</span> <span class="nav-text">二、 让图片在一排显示，定义记步器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三、让图片和点同步的一种方式；这是一个封装函数-move"><span class="nav-number">1.1.3.</span> <span class="nav-text">三、让图片和点同步的一种方式；这是一个封装函数 move</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#四、-让图片动起来的一种方法；这是一个封装函数-auto"><span class="nav-number">1.1.4.</span> <span class="nav-text">四、  让图片动起来的一种方法；这是一个封装函数 auto</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五、-鼠标移入移出-让图片和点停止播放效果；"><span class="nav-number">1.1.5.</span> <span class="nav-text">五、 鼠标移入移出 让图片和点停止播放效果；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#六、-点击左右按钮控制轮播方向"><span class="nav-number">1.1.6.</span> <span class="nav-text">六、 点击左右按钮控制轮播方向</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#七、-轮播圆点-点击出现对应的图片"><span class="nav-number">1.1.7.</span> <span class="nav-text">七、 轮播圆点 点击出现对应的图片</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结：怎么样这样写是不是思路很清晰！不管你信不信反正我是信啦！有什么不懂的可以扫描一下二维码！或者加五微信：15059132892"><span class="nav-number">2.</span> <span class="nav-text">总结：怎么样这样写是不是思路很清晰！不管你信不信反正我是信啦！有什么不懂的可以扫描一下二维码！或者加五微信：15059132892!</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+    <div class="yl-box">
+  <h2>友情链接:</h2>
+  <a class="theme-link" target=_blank href="http://wangzuoqiang.github.io">王作强</a>
+  <a class="theme-link" target=_blank href="http://mogugit.github.io">孙帅兵</a>
+  <a class="theme-link" target=_blank href="http://yyty.github.io">孙哲</a>
+  <a class="theme-link" target=_blank href="http://changxinle.github.io">常新乐</a>
+  <a class="theme-link" target=_blank href="http://maiime.github.io">马文杰</a>
+  <a class="theme-link" target=_blank href="http://wuxiao1021.github.io">吴肖</a>
+  <a class="theme-link" target=_blank href="http://qingxinxuan11.github.io">潘杰</a>
+  <a class="theme-link" target=_blank href="http://lanfeng-lgp.github.io">李国平</a>
+  <a class="theme-link" target=_blank href="http://crackerme.github.io">孙平</a>
+  <a class="theme-link" target=_blank href="http://CXY-WZQ.github.io">王振强</a>
+  <a class="theme-link" target=_blank href="http://kangyuf.github.io">康玉峰</a>
+  <a class="theme-link" target=_blank href="http://tianyu3137.github.io">张天宇</a>
+  <a class="theme-link" target=_blank href="http://xiehan126.github.io">解晗</a>
+  <a class="theme-link" target=_blank href="http://wzq120203.github.io">吴兆强</a>
+  <a class="theme-link" target=_blank href="http://liushengguang.github.io">刘圣光</a>
+  <a class="theme-link" target=_blank href="http://mabeyol.github.io">郭衍超</a>
+  <a class="theme-link" target=_blank href="http://jerytao.github.io">陶金</a>
+  <a class="theme-link" target=_blank href="http://taojunrui.lol">陶俊瑞</a>
+  <a class="theme-link" target=_blank href="http://xiaopxu.github.io">徐嘉农</a>
+  <a class="theme-link" target=_blank href="http://skyzuofeng.github.io">左峰</a>
+  <a class="theme-link" target=_blank href="http://ker95.github.io">龚克</a>
+  <a class="theme-link" target=_blank href="http://zouqianghtml.github.io">邹强</a>
+  <a class="theme-link" target=_blank href="http://lcsoul.github.io">刘畅</a>
+  <a class="theme-link" target=_blank href="http://41152419901017.github.io">赵德状</a>
+  <a class="theme-link" target=_blank href="http://jazzh5.github.io">曹玉</a>
+  <a class="theme-link" target=_blank href="http://wangbin5614.github.io">王彬</a>
+  <a class="theme-link" target=_blank href="http://aojiaodexiaopinguo.github.io">许伟</a>
+  <a class="theme-link" target=_blank href="http://liuyang10.github.io">刘洋</a>
+  <a class="theme-link" target=_blank href="http://qlhtml.github.io">钱磊</a>
+  <a class="theme-link" target=_blank href="http://trustzuo.github.io">左友卫</a>
+  <a class="theme-link" target=_blank href="http://yangbiaobiao.github.io">赵理想</a>
+  <a class="theme-link" target=_blank href="http://wangjing991.github.io">王菁</a>
+  <a class="theme-link" target=_blank href="http://ahz549467483.github.io">陈晨</a>
+  <a class="theme-link" target=_blank href="http://zhjdeitiny.github.io">张浩京</a>
+  <a class="theme-link" target=_blank href="http://xiaoxier.github.io">韩盼盼</a>
+  <a class="theme-link" target=_blank href="http://wudahui.github.io">伍达辉</a>
+  <a class="theme-link" target=_blank href="http://gaoke700.github.io">田高科</a>
+  <a class="theme-link" target=_blank href="http://githubfffffff.github.io">孙登朝</a>
+  <a class="theme-link" target=_blank href="http://suncomehere.github.io">孙丽芳</a>
+  <a class="theme-link" target=_blank href="http://gongmingzhi.github.io">龚明智</a>
+  <a class="theme-link" target=_blank href="http://wz19910410.github.io">王拯</a>
+  <a class="theme-link" target=_blank href="http://genhaodegenhao.github.io/">王松</a>
+  <a class="theme-link" target=_blank href="http://chencunming1234@github.io">陈存明</a>
+  <a class="theme-link" target=_blank href="http://gaoshanshansyp.github.io/">尚银平</a>
+</div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">吴肖</span>
+</div>
+
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="http://hexo.io" rel="external nofollow">Hexo</a>
+
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">
+
+    NexT.Muse
+  </a>
+
+
+
+
+  <span id="busuanzi_container_site_pv">|
+      本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </span>
+
+  <span id="busuanzi_container_site_uv">|
+    本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  </span>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"wuxiao1021"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+  
+  
+
+</body>
+</html>
